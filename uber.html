@@ -6,11 +6,15 @@
 </head>
 <body>
 	Uber Page
+	<div>
+		Auth Response : <span id="auth"></span>
+	</div>
 </body>
 <script>
 	let url = window.location;
 	url = url.href;
 	const params = url.split('?')[1];
 	window.postMessage(JSON.stringify({name:'uberauth',value:params,status:200}));
+	document.querySelector('#auth').innerHTML = url;
 </script>
 </html>
