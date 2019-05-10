@@ -11,6 +11,6 @@
 	let url = window.location;
 	url = url.href;
 	const params = url.split('?')[1];
-	window.postMessage(params);
+	window.postMessage(JSON.stringify({name:'uberauth',value:params,status:200}));
 </script>
 </html>
