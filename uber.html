@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uber</title>
+</head>
+<body>
+	
+</body>
+<script>
+	let url = window.location;
+	url = url.href;
+	const params = url.split('?')[1];
+	window.postMessage(params);
+</script>
+</html>
